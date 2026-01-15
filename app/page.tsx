@@ -1,6 +1,7 @@
 import DotGrid from "@/components/DotGrid";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
+import Technologies from "@/components/Technologis/Technologis";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
           <Header />
           <div className="pt-36"></div>
           <Hero />
+          <Technologies />
         </div>
       </div>
       <div className="container"></div>
