@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="fixed top-4 left-4 w-full z-50 pointer-events-none">
+    <header className="fixed top-4 left-0 w-full z-50 pointer-events-none">
       <div className="container">
         <div
           className="relative pointer-events-auto rounded-3xl flex items-center justify-between px-6 py-2 gap-8 text-white text-[15px] leading-none
@@ -49,6 +49,18 @@ export default function Header() {
                 className="text-white/90 hover:text-white transition text-xl"
               >
                 Projects
+              </Link>
+            </StarBorder>
+            <StarBorder
+              className="custom-class w-40 rounded-4xl"
+              color="cyan"
+              speed="5s"
+            >
+              <Link
+                href="#"
+                className="text-white/90 hover:text-white transition text-xl"
+              >
+                Contacts
               </Link>
             </StarBorder>
           </nav>
