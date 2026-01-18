@@ -6,8 +6,8 @@ import Technologies from "@/components/Technologis/Technologis";
 
 export default function Home() {
   return (
-    <main>
-      <div style={{ width: "100%", height: "100vw", position: "relative" }}>
+    <main className="relative overflow-x-hidden">
+      <div style={{ width: "100%", position: "relative" }}>
         <DotGrid
           dotSize={6}
           gap={14}
