@@ -225,3 +225,17 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+@keyframes glowRoll {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.animate-glowRoll {
+  animation: glowRoll 1s forwards;
+}

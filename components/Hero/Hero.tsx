@@ -24,7 +24,7 @@ export default function Hero() {
               Express, MongoDB). I enjoy solving complex problems and turning
               ideas into working products.
             </p>
-            <ul className="flex gap-4">
+            <ul className="flex flex-col md:flex-row gap-4">
               <li>
                 <Link href="#portfolio" className="block">
                   <StarBorder

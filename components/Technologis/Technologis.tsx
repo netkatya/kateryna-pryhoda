@@ -54,12 +54,10 @@ const imageLogos = [
 export default function Technologies() {
   return (
     <section className="py-20">
-      <div
-        style={{ height: "200px", position: "relative", overflow: "hidden" }}
-      >
+      <div style={{ height: "60px", position: "relative", overflow: "hidden" }}>
         <LogoLoop
           logos={techLogos}
-          speed={120}
+          speed={100}
           direction="left"
           logoHeight={48}
           gap={40}
