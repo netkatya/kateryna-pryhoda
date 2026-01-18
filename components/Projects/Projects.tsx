@@ -5,32 +5,35 @@ const projects = [
   {
     title: "The Nail Touch",
     description:
-      "Full-stack dashboard with authentication, charts and payments.",
+      "Modern commercial landing page for a beauty master with responsive layout, light/dark themes, and client-focused UI.",
     image: "/img/projects/nail/nail-touch-main.jpg",
     stack: ["Next.js", "TypeScript", "TailwindCSS"],
-    live: "#",
-    github: "#",
+    live: "https://the-nail-touch.vercel.app",
+    github: "https://github.com/netkatya/the-nail-touch",
   },
   {
     title: "Nanny Services",
-    description: "Modern e-commerce app with cart, checkout and admin panel.",
+    description:
+      "Modern web application with authentication, favorites functionality, and a fully responsive, user-friendly interface.",
     image: "/img/projects/nanny/nanny.jpg",
     stack: ["Next.js", "TypeScript", "TailwindCSS", "Firebase"],
-    live: "#",
-    github: "#",
+    live: "https://nanny-services-alpha-navy.vercel.app",
+    github: "https://github.com/netkatya/nanny-services",
   },
   {
     title: "ARI - Learn JavaScript",
-    description: "Personal portfolio with animations and interactive UI.",
+    description:
+      "Interactive JavaScript learning game with quizzes and live coding challenges, featuring multilingual support, modern animations, and a fully responsive UI.",
     image: "/img/projects/ari/ari-main.jpg",
     stack: ["Next.js", "TypeScript", "Tailwind"],
-    live: "#",
-    github: "#",
+    live: "https://js-game-seven-indol.vercel.app",
+    github: "https://github.com/netkatya/js-game",
   },
 
   {
     title: "Cozy Corner - E-Commerce",
-    description: "Personal portfolio with animations and interactive UI.",
+    description:
+      "Online store with authentication, product catalog, filtering, cart and favorites, user account, and Telegram-based password recovery.",
     image: "/img/projects/cozy/goods-cozy.jpg",
     stack: [
       "Next.js",
@@ -41,8 +44,8 @@ const projects = [
       "MongoDB",
       "REST API",
     ],
-    live: "#",
-    github: "#",
+    live: "https://online-shop-chi-flame.vercel.app",
+    github: "https://github.com/netkatya/online-shop",
   },
   {
     title: "Alien Survivor: Survival Arena",
@@ -80,7 +83,7 @@ const projects = [
     title: "Booksy",
     description: "Personal portfolio with animations and interactive UI.",
     image: "/img/projects/booksy/booksy-main.jpg",
-    stack: ["Next.js", "Tailwind", "TypeScript"],
+    stack: ["HTML", "CSS", "JavaScript", "Vite", "REST API"],
     live: "#",
     github: "#",
   },
@@ -88,7 +91,7 @@ const projects = [
     title: "Currency Exchange",
     description: "Personal portfolio with animations and interactive UI.",
     image: "/img/projects/currency/currency-second.jpg",
-    stack: ["Next.js", "Tailwind", "TypeScript"],
+    stack: ["Next.js", "Tailwind", "TypeScript", "REST API"],
     live: "#",
     github: "#",
   },
@@ -110,8 +113,8 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative rounded-3xl p-[1px] 
-              bg-gradient-to-br from-white/10 to-white/5
+              className="group relative rounded-3xl p-px 
+              bg-linear-to-br from-white/10 to-white/5
               hover:from-cyan-400/40 hover:to-blue-500/30 transition-all duration-500"
             >
               <div
@@ -150,12 +153,14 @@ export default function Projects() {
                   <Link
                     href={project.live}
                     className="text-cyan-400 hover:underline"
+                    target="blank"
                   >
                     Live
                   </Link>
                   <Link
                     href={project.github}
                     className="text-white/60 hover:text-white"
+                    target="blank"
                   >
                     GitHub
                   </Link>
