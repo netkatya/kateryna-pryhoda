@@ -52,7 +52,7 @@ export default function Projects() {
           Selected <span className="text-cyan-400">Projects</span>
         </h2>
 
-        <p className="text-lg text-white/70 max-w-xl mb-16">
+        <p className="text-lg text-white/70 max-w-xl mb-8">
           A collection of projects where I focused on performance, clean
           architecture, and delightful UI.
         </p>
