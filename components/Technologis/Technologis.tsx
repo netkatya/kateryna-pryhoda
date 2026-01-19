@@ -7,7 +7,7 @@ export default function Technologies() {
       <div style={{ height: "60px", position: "relative", overflow: "hidden" }}>
         <LogoLoop
           logos={techLogos}
-          speed={100}
+          speed={50}
           direction="left"
           logoHeight={48}
           gap={40}
