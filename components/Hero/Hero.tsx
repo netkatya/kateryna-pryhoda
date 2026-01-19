@@ -58,7 +58,7 @@ export default function Hero() {
                     color="cyan"
                     speed="5s"
                   >
-                    <span className="text-lg">View Portfolio</span>
+                    <span className="text-lg">View Projects</span>
                   </StarBorder>
                 </Link>
               </li>
@@ -70,7 +70,7 @@ export default function Hero() {
                     color="cyan"
                     speed="5s"
                   >
-                    <span className="text-lg">Contact Me</span>
+                    <span className="text-lg">Get in Touch</span>
                   </StarBorder>
                 </Link>
               </li>
