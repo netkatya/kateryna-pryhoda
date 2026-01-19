@@ -78,6 +78,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --cyan: oklch(0.78 0.14 200);
 }
 
 .dark {
@@ -238,4 +239,36 @@ body {
 
 .animate-glowRoll {
   animation: glowRoll 1s forwards;
+}
+
+/* В файле globals.css или в модалке через @layer utilities */
+.modal-scroll::-webkit-scrollbar {
+  height: 8px;
+  /* для горизонтального скролла галереи */
+  width: 8px;
+  /* для вертикального скролла модалки */
+}
+
+.modal-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  /* прозрачный фон дорожки */
+  border-radius: 8px;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.6);
+  /* cyan, немного прозрачный */
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.9);
+  /* ярче при hover */
+}
+
+/* Для Firefox */
+.modal-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(34, 211, 238, 0.6) rgba(255, 255, 255, 0.05);
 }

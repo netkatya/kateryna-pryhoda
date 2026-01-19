@@ -1,5 +1,6 @@
 import Contacts from "@/components/Contacts/Contacts";
 import DotGrid from "@/components/DotGrid";
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Projects from "@/components/Projects/Projects";
@@ -35,6 +36,7 @@ export default function Home() {
           <Technologies />
           <Projects />
           <Contacts />
+          <Footer />
         </div>
       </div>
       <div className="container"></div>

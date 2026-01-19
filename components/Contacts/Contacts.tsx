@@ -6,7 +6,7 @@ import { Mail, Github, Linkedin } from "lucide-react";
 const contacts = [
   {
     title: "Email",
-    value: "kateryna.pryhoda@gmail.com",
+    value: "e.klimochenkova@gmail.com",
     href: "mailto:e.klimochenkova@gmail.com",
     icon: Mail,
   },
@@ -26,7 +26,7 @@ const contacts = [
 
 export default function Contacts() {
   return (
-    <section id="contacts" className="py-24">
+    <section id="contacts" className="py-15 scroll-m-24">
       <div className="container">
         {/* Wrapper */}
         <div
@@ -37,12 +37,12 @@ export default function Contacts() {
         >
           {/* Title */}
           <h2 className="text-5xl font-semibold mb-6">
-            Let’s <span className="text-cyan-400">work together</span>
+            Let’s <span className="text-(--cyan)">work together</span>
           </h2>
 
           <p className="text-lg text-white/70 max-w-2xl mb-14">
-            I’m open to new opportunities, freelance projects, and
-            collaboration. Feel free to reach out — I’d love to hear from you.
+            I’m open to full-time opportunities, freelance projects, and
+            collaborations. Feel free to reach out — I’d love to hear from you.
           </p>
 
           {/* Cards */}
@@ -62,26 +62,14 @@ export default function Contacts() {
                   bg-white/5 backdrop-blur-xl
                   border border-white/10
                   transition-all duration-500
-                  group-hover:shadow-[0_0_40px_rgba(0,255,255,0.15)]"
+                  group-hover:shadow-[0_0_40px_rgba(0,255,255,0.15)] "
                 >
                   <item.icon className="w-8 h-8 text-cyan-400 mb-4" />
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  {item.value}
                 </div>
               </Link>
             ))}
-          </div>
-
-          {/* CTA */}
-          <div className="mt-16">
-            <Link
-              href="mailto:e.klimochenkova@gmail.com"
-              className="inline-flex items-center justify-center
-              px-10 py-4 rounded-full
-              bg-cyan-400 text-black font-medium
-              hover:bg-cyan-300 transition"
-            >
-              Send me an email
-            </Link>
           </div>
         </div>
       </div>
