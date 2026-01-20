@@ -60,7 +60,7 @@ export default function Projects() {
         {/* GRID */}
         <div
           ref={gridRef}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 items-stretch"
+          className="grid  xl:grid-cols-3 gap-10 items-stretch"
         >
           <AnimatePresence>
             {visibleProjects.map((project) => (
@@ -83,7 +83,7 @@ export default function Projects() {
                 >
                   <div className="relative h-full flex flex-col p-6 rounded-3xl">
                     {/* IMAGE */}
-                    <div className="rounded-2xl overflow-hidden mb-6 h-48">
+                    <div className="rounded-2xl overflow-hidden mb-6 h-48 md:h-88 xl:h-48">
                       <Image
                         src={project.image}
                         alt={project.title}
