@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="container">
         <div
           className="
-        flex flex-col-reverse md:flex-row
+        flex flex-col-reverse lg:flex-row
         items-center gap-10
         px-8 py-6 md:py-8
         rounded-3xl
@@ -19,7 +19,7 @@ export default function Hero() {
       "
         >
           {/* TEXT */}
-          <div className="w-full md:w-[65%]">
+          <div className="w-full lg:w-[65%]">
             <h1 className="text-4xl md:text-5xl leading-tight mb-4">
               I’m{" "}
               <span className="font-semibold text-(--cyan)">

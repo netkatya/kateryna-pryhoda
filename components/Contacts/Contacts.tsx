@@ -66,7 +66,7 @@ export default function Contacts() {
                 >
                   <item.icon className="w-8 h-8 text-cyan-400 mb-4" />
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  {item.value}
+                  <p className="wrap-break-word">{item.value}</p>
                 </div>
               </Link>
             ))}

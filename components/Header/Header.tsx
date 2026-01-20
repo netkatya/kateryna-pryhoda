@@ -42,30 +42,45 @@ export default function Header() {
           />
 
           {/* DESKTOP NAV */}
-          <nav className="hidden md:flex gap-6">
-            {navItems.map((item) => (
-              <Link
-                key={item.id}
-                href={item.href ? item.href : `#${item.id}`}
-                target={item.href ? "_blank" : "_self"}
-              >
-                <StarBorder
-                  className="w-40 rounded-4xl hover:shadow-[0_0_20px_var(--cyan)] transition duration-250 cursor-pointer"
-                  color="cyan"
-                  speed="7s"
+          <nav className="hidden lg:flex gap-6">
+            {navItems.map((item) =>
+              item.href ? (
+                <a
+                  key={item.id}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <span className="text-white/90 hover:text-white text-lg">
-                    {item.label}
-                  </span>
-                </StarBorder>
-              </Link>
-            ))}
+                  <StarBorder
+                    className="w-40 rounded-4xl hover:shadow-[0_0_20px_var(--cyan)] transition duration-250 cursor-pointer"
+                    color="cyan"
+                    speed="7s"
+                  >
+                    <span className="text-white/90 hover:text-white text-lg">
+                      {item.label}
+                    </span>
+                  </StarBorder>
+                </a>
+              ) : (
+                <Link key={item.id} href={`#${item.id}`}>
+                  <StarBorder
+                    className="w-40 rounded-4xl hover:shadow-[0_0_20px_var(--cyan)] transition duration-250 cursor-pointer"
+                    color="cyan"
+                    speed="7s"
+                  >
+                    <span className="text-white/90 hover:text-white text-lg">
+                      {item.label}
+                    </span>
+                  </StarBorder>
+                </Link>
+              ),
+            )}
           </nav>
 
           {/* MOBILE BUTTON */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="md:hidden text-white text-3xl pointer-events-auto"
+            className="lg:hidden text-white text-3xl pointer-events-auto"
             aria-label="Toggle menu"
           >
             {open ? "✕" : "☰"}
@@ -74,7 +89,7 @@ export default function Header() {
           {/* MOBILE MENU */}
           <div
             className={`
-              absolute top-full left-0 right-0 mt-4 md:hidden
+              absolute top-full left-0 right-0 mt-4 lg:hidden
               pointer-events-auto
               rounded-3xl
               px-6 py-6
@@ -89,23 +104,38 @@ export default function Header() {
               }
             `}
           >
-            {navItems.map((item) => (
-              <Link
-                key={item.id}
-                href={item.href ? item.href : `#${item.id}`}
-                onClick={closeMenu}
-                target={item.href ? "_blank" : "_self"}
-                className="w-full text-center"
-              >
-                <StarBorder
-                  className="w-full rounded-4xl hover:shadow-[0_0_20px_var(--cyan)] transition"
-                  color="cyan"
-                  speed="7s"
+            {navItems.map((item) =>
+              item.href ? (
+                <a
+                  key={item.id}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <span className="text-white text-lg">{item.label}</span>
-                </StarBorder>
-              </Link>
-            ))}
+                  <StarBorder
+                    className="w-40 rounded-4xl hover:shadow-[0_0_20px_var(--cyan)] transition duration-250 cursor-pointer"
+                    color="cyan"
+                    speed="7s"
+                  >
+                    <span className="text-white/90 hover:text-white text-lg">
+                      {item.label}
+                    </span>
+                  </StarBorder>
+                </a>
+              ) : (
+                <Link key={item.id} href={`#${item.id}`}>
+                  <StarBorder
+                    className="w-40 rounded-4xl hover:shadow-[0_0_20px_var(--cyan)] transition duration-250 cursor-pointer"
+                    color="cyan"
+                    speed="7s"
+                  >
+                    <span className="text-white/90 hover:text-white text-lg">
+                      {item.label}
+                    </span>
+                  </StarBorder>
+                </Link>
+              ),
+            )}
           </div>
         </div>
       </div>
