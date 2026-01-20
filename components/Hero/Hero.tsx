@@ -50,11 +50,11 @@ export default function Hero() {
             </p>
 
             {/* BUTTONS */}
-            <ul className="flex flex-col md:flex-row gap-4">
+            <ul className="flex flex-col lg:flex-row gap-4">
               <li>
                 <Link href="#portfolio">
                   <StarBorder
-                    className="w-56 rounded-4xl cursor-pointer hover:shadow-[0_0_20px_var(--cyan)] transition duration-300 ease-in-out"
+                    className="w-full md:w-56 rounded-4xl cursor-pointer hover:shadow-[0_0_20px_var(--cyan)] transition duration-300 ease-in-out"
                     color="cyan"
                     speed="5s"
                   >
@@ -66,7 +66,7 @@ export default function Hero() {
               <li>
                 <Link href="#contacts">
                   <StarBorder
-                    className="w-56 rounded-4xl cursor-pointer hover:shadow-[0_0_20px_var(--cyan)] transition duration-300 ease-in-out"
+                    className="w-full md:w-56 rounded-4xl cursor-pointer hover:shadow-[0_0_20px_var(--cyan)] transition duration-300 ease-in-out"
                     color="cyan"
                     speed="5s"
                   >
