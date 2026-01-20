@@ -85,7 +85,6 @@ export default function Hero() {
               height={400}
               alt="Kateryna Pryhoda"
               className="rounded-full max-w-75 md:max-w-90"
-              priority
             />
           </div>
         </div>
