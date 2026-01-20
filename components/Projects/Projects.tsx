@@ -20,7 +20,7 @@ export default function Projects() {
 
   const isMobile = () =>
     typeof window !== "undefined" &&
-    window.matchMedia("(max-width: 768px)").matches;
+    window.matchMedia("(max-width: 1279px)").matches;
 
   const handleLoadMore = () => {
     setVisibleCount((prev) => {
