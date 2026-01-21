@@ -111,6 +111,7 @@ export default function Header() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={closeMenu}
                 >
                   <StarBorder
                     className="w-40 rounded-4xl hover:shadow-[0_0_20px_var(--cyan)] transition duration-250 cursor-pointer"
