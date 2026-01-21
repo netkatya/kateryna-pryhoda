@@ -80,7 +80,7 @@ export default function Header() {
           {/* MOBILE BUTTON */}
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="lg:hidden text-white text-3xl pointer-events-auto"
+            className="lg:hidden text-white text-3xl pointer-events-auto cursor-pointer"
             aria-label="Toggle menu"
           >
             {open ? "✕" : "☰"}
@@ -124,7 +124,7 @@ export default function Header() {
                   </StarBorder>
                 </a>
               ) : (
-                <Link key={item.id} href={`#${item.id}`}>
+                <a key={item.id} href={`#${item.id}`} onClick={closeMenu}>
                   <StarBorder
                     className="w-40 rounded-4xl hover:shadow-[0_0_20px_var(--cyan)] transition duration-250 cursor-pointer"
                     color="cyan"
@@ -134,7 +134,7 @@ export default function Header() {
                       {item.label}
                     </span>
                   </StarBorder>
-                </Link>
+                </a>
               ),
             )}
           </div>
