@@ -8,7 +8,7 @@ export const projects: Project[] = [
       "Modern commercial landing page for a beauty master with responsive layout, light/dark themes, and client-focused UI.",
     stack: ["Next.js", "TypeScript", "TailwindCSS"],
     image: "/img/projects/nail/nail-touch-main.jpg",
-    live: "https://the-nail-touch.vercel.app",
+    live: "https://thenailtouch.com/",
     github: "https://github.com/netkatya/the-nail-touch",
 
     details: {
