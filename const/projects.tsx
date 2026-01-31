@@ -2,6 +2,40 @@ import { Project } from "@/types/types";
 
 export const projects: Project[] = [
   {
+    title: "Home Care Services Sheffield",
+    type: "commercial",
+    description:
+      "Accessible business website for a home care service, built with WCAG best practices, inclusive UX, and a fully responsive layout.",
+    image: "/img/projects/pa/pa-main.jpg",
+    stack: ["Next.js", "TypeScript", "TailwindCSS"],
+    live: "https://pahomecareservice.co.uk/",
+    github: "https://github.com/netkatya/PA-home-care",
+
+    details: {
+      role: "Front-End Developer",
+      collaboration: "Individual project – worked independently",
+      responsibilities: [
+        "Communicated directly with the client to gather requirements and clarify goals.",
+        "Planned content structure and user flows.",
+        "Designed adaptive UI with a focus on clarity and accessibility.",
+        "Developed the website using Next.js and Tailwind CSS.",
+        "Implemented accessibility best practices following WCAG guidelines.",
+        "Ensured keyboard navigation, focus management, and screen reader support.",
+        "Handled basic SEO setup and deployed the website to a live domain.",
+      ],
+      problemSolved:
+        "The project required balancing a simple visual presentation with strong accessibility requirements, ensuring the website is usable for a wide range of users, including people with disabilities.",
+      outcome:
+        "Delivered a fully accessible, responsive, and production-ready business website. The client was satisfied with the result, and the site meets modern accessibility and usability standards.",
+    },
+
+    gallery: [
+      "/img/projects/pa/pa-main.jpg",
+      "/img/projects/pa/pa-services.jpg",
+      "/img/projects/pa/pa-reviews.jpg",
+    ],
+  },
+  {
     title: "The Nail Touch",
     type: "commercial",
     description:
