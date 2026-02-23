@@ -71,6 +71,58 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "Petlove",
+    type: "educational",
+    description:
+      "Pet management web application built with Next.js and TypeScript, integrating a ready-made REST API and UI design.",
+
+    image: "/img/projects/petlove/petlove-main.jpg",
+
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Zustand",
+      "REST API",
+      "Cloudinary",
+    ],
+
+    live: "https://petlove-vert.vercel.app/",
+    github: "https://github.com/netkatya/petlove",
+
+    details: {
+      role: "Front-End Developer",
+      collaboration: "Individual project – worked independently",
+
+      responsibilities: [
+        "Developed the frontend application using Next.js (App Router) and TypeScript.",
+        "Integrated a ready-made REST API for authentication and data management.",
+        "Implemented Sign Up / Log In flows and protected routes.",
+        "Built a personal dashboard with CRUD functionality for managing pets.",
+        "Implemented profile editing and avatar upload via Cloudinary.",
+        "Added filtering, sorting, and pagination features.",
+        "Managed global state using Zustand.",
+        "Translated provided UI mockups into a responsive and pixel-accurate interface using Tailwind CSS.",
+      ],
+
+      problemSolved:
+        "The main challenge was implementing a scalable state management system and combining multiple dynamic features such as authentication, protected routes, API integration, and real-time UI updates while maintaining clean architecture.",
+
+      outcome:
+        "Successfully delivered a responsive and fully functional web application demonstrating modern frontend best practices, state management, API integration, and user profile management.",
+    },
+
+    gallery: [
+      "/img/projects/petlove/petlove-main.jpg",
+      "/img/projects/petlove/petlove-petlist.jpg",
+      "/img/projects/petlove/petlove-account.jpg",
+      "/img/projects/petlove/petlove-friends.jpg",
+      "/img/projects/petlove/petlove-login.jpg",
+      "/img/projects/petlove/petlove-register.jpg",
+      "/img/projects/petlove/petlove-news.jpg",
+    ],
+  },
+  {
     title: "Nanny Services",
     type: "educational",
     description:
